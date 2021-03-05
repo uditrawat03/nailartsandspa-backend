@@ -10,10 +10,4 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-
-
-    public function sendResponseSuccess($data, $message = null)
-    {
-        return response()->json(['success' => true, 'payload' => $data, 'message' => $message]);
-    }
 }

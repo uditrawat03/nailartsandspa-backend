@@ -20,7 +20,6 @@ class InstagramFeedController extends Controller
             array_push($data, $feed['url']);
         }
 
-
-        return $this->sendResponseSuccess($data);
+        return response()->asSuccess($data);
     }
 }
