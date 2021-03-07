@@ -17,8 +17,7 @@ class TestimonialController extends Controller
         try{
 
             $testimonials = Testimonials::where('status','1')->get();            
-            $message = "No record found!";            
-            return response()->asSuccess($testimonials, $message);
+            return response()->asSuccess($testimonials);
 
         }catch(Exception $exception){            
             
