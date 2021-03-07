@@ -21,7 +21,7 @@ class TestimonialController extends Controller
 
         }catch(Exception $exception){            
             
-            return response()->asError($testimonials, $exception->getMessage(), $exception->getCode());            
+            return response()->asError($exception->getMessage(), $exception->getCode());            
         }        
     }
 

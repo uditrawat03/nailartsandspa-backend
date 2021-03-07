@@ -51,27 +51,22 @@ class ContactUsController extends Controller
         }        
         
         try{
+
             $contactus              = new ContactUs();
             $contactus->name        = $request->input('name');
             $contactus->email_id    = $request->input('email_id');
             $contactus->subject     = $request->input('subject');
-            $contactus->description = $request->input('description');
-            $status = false;
+            $contactus->description = $request->input('description');            
             $message = "System Error, Please try after some time!";
-            if( $contactus->save() ){
-                $status  = true;
+            
+            if( $contactus->save() ){                
                 $message = "Your detail has been saved successfully, Administrator team will contact soon!";
             }
-            return response()->json(array(
-                'status'  => $status,
-                'message' => $message
-            ), 200);
+            return response()->asSuccess($data='', $message);
 
         } catch( Exception $exception ) {
-            return response()->json(array(
-                'status'  => false,
-                'message' => $exception->getMessage()
-            ), 400);
+            
+            return response()->asError($exception->getMessage(), $exception->getCode()); 
         }
         
     }
