@@ -22,7 +22,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::middleware('api')
     ->group(
         function ($router) {
-
             Route::post('login', 'AuthController@login')->name('login');
             Route::post('logout', 'AuthController@logout')->name('logout');
             Route::post('refresh', 'AuthController@refresh')->name('refresh');
@@ -31,3 +30,5 @@ Route::middleware('api')
     );
 
 Route::get('instagram-feed', 'InstagramFeedController@getFeed')->name('instagram-feed');
+Route::post('contact-us', 'ContactUsController@store')->name('contact-us');
+Route::get('testimonials', 'TestimonialController@index')->name('testimonials');
