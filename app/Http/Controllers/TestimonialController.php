@@ -16,27 +16,13 @@ class TestimonialController extends Controller
     {
         try{
 
-            $testimonials = Testimonials::where('status','1')->get();
-            $status  = true;
-            $message = "No record found!";
-            $data    = "";
-            
-            if(!$testimonials->isEmpty()){
-                $status  = true;
-                $message = "Record found!";
-                $data    = $testimonials;
-            }
-            return response()->json(array(
-                'status'  => $status,
-                'message' => $message,
-                'data'    => $data  
-            ), 200);
+            $testimonials = Testimonials::where('status','1')->get();            
+            $message = "No record found!";            
+            return response()->asSuccess($testimonials, $message);
 
         }catch(Exception $exception){            
-            return response()->json(array(
-                'status'  => false,
-                'message' => $exception->getMessage()
-            ), $exception->getCode());
+            
+            return response()->asError($testimonials, $exception->getMessage(), $exception->getCode());            
         }        
     }
 
