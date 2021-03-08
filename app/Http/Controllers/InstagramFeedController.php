@@ -12,7 +12,7 @@ class InstagramFeedController extends Controller
     {
         $profile = Profile::first();
 
-        $feeds = $profile->feed();
+        $feeds = $profile->feed(null);
 
 
         $data = [];

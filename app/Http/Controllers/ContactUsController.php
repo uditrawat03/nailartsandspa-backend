@@ -36,39 +36,37 @@ class ContactUsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store( Request $request )
+    public function store(Request $request)
     {
-         $validator = Validator::make($request->all(), [
+        $validator = Validator::make($request->all(), [
             'name'          => 'required|max:255',
             'subject'       => 'required|max:255',
-            'email_id'      =>'required|email',
-            'description'   =>'required'
+            'email'      => 'required|email',
+            'description'   => 'required'
 
         ]);
 
         if ($validator->fails()) {
             return response()->json($validator->messages(), 200);
-        }        
-        
-        try{
+        }
+
+        try {
 
             $contactus              = new ContactUs();
             $contactus->name        = $request->input('name');
-            $contactus->email_id    = $request->input('email_id');
+            $contactus->email_id    = $request->input('email');
             $contactus->subject     = $request->input('subject');
-            $contactus->description = $request->input('description');            
+            $contactus->description = $request->input('description');
             $message = "System Error, Please try after some time!";
-            
-            if( $contactus->save() ){                
+
+            if ($contactus->save()) {
                 $message = "Your detail has been saved successfully, Administrator team will contact soon!";
             }
-            return response()->asSuccess($data='', $message);
+            return response()->asSuccess($data = '', $message);
+        } catch (Exception $exception) {
 
-        } catch( Exception $exception ) {
-            
-            return response()->asError($exception->getMessage(), $exception->getCode()); 
+            return response()->asError($exception->getMessage(), $exception->getCode());
         }
-        
     }
 
     /**
