@@ -32,3 +32,4 @@ Route::middleware('api')
 Route::get('instagram-feed', 'InstagramFeedController@getFeed')->name('instagram-feed');
 Route::post('contact-us', 'ContactUsController@store')->name('contact-us');
 Route::get('testimonials', 'TestimonialController@index')->name('testimonials');
+Route::get('blogs', 'Api\BlogsController@index')->name('testimonials');
