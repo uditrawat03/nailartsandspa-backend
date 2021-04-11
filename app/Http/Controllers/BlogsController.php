@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BlogsController extends Controller
 {
@@ -36,13 +37,16 @@ class BlogsController extends Controller
      */
     public function store(Request $request)
     {
+        $url = $request->file('image') ? $request->file('image')->store('blogs') : null;
+
         Blog::create([
             'title' => $request->title,
             'description' => $request->description,
-            'active' => $request->active ? true : false
+            'active' => $request->active ? true : false,
+            'image_path' => $url
         ]);
 
-        return redirect()->route('blogs.index');
+        return redirect()->route('admin.blogs.index');
     }
 
     /**
@@ -64,7 +68,7 @@ class BlogsController extends Controller
      */
     public function edit(Blog $blog)
     {
-        //
+        return view('blogs.edit', compact('blog')) ;
     }
 
     /**
@@ -76,7 +80,14 @@ class BlogsController extends Controller
      */
     public function update(Request $request, Blog $blog)
     {
-        //
+        $url = $request->file('image') ? $request->file('image')->store('blogs') : $blog->image_path;
+
+        $blog->title = $request->title;
+        $blog->description = $request->description;
+        $blog->image_path = $url;
+        $blog->save();
+
+        return redirect()->route('admin.blogs.index');
     }
 
     /**

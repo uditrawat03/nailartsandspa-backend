@@ -176,6 +176,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ViewDirectiveProvider::class,
 
     ],
 

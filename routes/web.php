@@ -14,12 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->route('login');
+    return view('welcome');
 });
+// Frontend Routes
 
+
+Route::get('blogs', 'Frontend\BlogsController@index');
+
+// Admin Routes
 Route::group(
     [
-        'middleware' => 'auth'
+        'prefix' => 'admin',
+        'middleware' => 'auth',
+        'as' => 'admin.'
     ],
     function () {
         Route::resource('blogs', 'BlogsController');

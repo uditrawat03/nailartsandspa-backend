@@ -13,7 +13,7 @@
                         {{ session('status') }}
                     </div>
                     @endif
-                    <form method="POST" action="{{ route('blogs.store') }}">
+                    <form method="POST" action="{{ route('admin.blogs.store') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label for="title">Title</label>
@@ -25,6 +25,11 @@
                             <label for="description">Body</label>
                             <textarea class="form-control" id="description" placeholder="Description" required
                                 name="description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Image</label>
+                            <input type="file" class="form-control-file" id="image" name="image">
+
                         </div>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="active" checked name="active">

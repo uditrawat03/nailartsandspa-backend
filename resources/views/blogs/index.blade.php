@@ -10,7 +10,7 @@
                     {{ __('Blogs List') }}
 
                     <h4 class="text-right">
-                        <a href="{{ route('blogs.create') }}" class="btn btn-primary">Add New</a>
+                        <a href="{{ route('admin.blogs.create') }}" class="btn btn-primary">Add New</a>
                     </h4>
                 </div>
 
@@ -37,7 +37,7 @@
                                 <td>{{ $blog->title }}</td>
                                 <td>{{ $blog->created_at->format('Y-m-d')}}</td>
                                 <td>
-                                    <a href="/edit/{{ $blog->id }}">Edit</a>
+                                    <a href="{{ route('admin.blogs.edit', $blog) }}">Edit</a>
                                 </td>
                             </tr>
                             @endforeach

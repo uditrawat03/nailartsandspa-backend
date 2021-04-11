@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class BlogsController extends Controller
 {
@@ -17,10 +15,10 @@ class BlogsController extends Controller
     public function index()
     {
         try {
-            $blogs = Blog::paginate();
-            return response()->asSuccess($blogs);
+            $blogs = Blog::limit(3)->latest()->paginate();
+
+            return view('frontend.blogs.index', compact('blogs'));
         } catch (\Exception $exception) {
-            return response()->asError($exception->getMessage(), $exception->getCode());
         }
     }
 }
