@@ -18,7 +18,7 @@ class FrontendDirective
     {
         $profile = Profile::first();
 
-        $feeds = $profile->feed(null);
+        $feeds = $profile->feed(12);
 
 
         $data = [];
