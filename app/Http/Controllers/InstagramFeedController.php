@@ -7,12 +7,11 @@ use Illuminate\Http\Request;
 
 class InstagramFeedController extends Controller
 {
-
     public function getFeed()
     {
         $profile = Profile::first();
 
-        $feeds = $profile->feed(null);
+        $feeds = $profile->feed(12);
 
 
         $data = [];
