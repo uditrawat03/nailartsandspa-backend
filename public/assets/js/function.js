@@ -157,11 +157,12 @@ $(document).ready(function () {
       var dataString = $("form#ContactForm").serialize();
       $.ajax({
         type: "POST",
-        url: "contactsend.php",
+        url: "api/contact-us",
         cache: false,
         data: dataString,
         success: function (data) {
-          if (data == 1) {
+          
+          if (data.success) {
             $("#ContactSuccessMessage").slideDown(500);
             $("#ContactSuccessMessage").html(
               "<div class='alert alert-success'><strong>Success!</strong> Your message has been sent to us.</div>"

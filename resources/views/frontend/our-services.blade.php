@@ -1,7 +1,7 @@
 <section id="services" class="col-padtop">
     <div class="container">
         <div class="row marbottom">
-            <div class="col-sm-12 col-md-7 col-lg-5 pull-right wow fadeInUp">
+            <div class="col-sm-12 col-md-12 col-lg-12 wow fadeInUp">
                 <h2>Our Services</h2>
                 <p class="pull-right">Our classic pedicure service includes: trim, shape & clean underneath nails,
                     remove ingrown toes nail if needed, cuticle detail, callous chemical treatment, heels scrub, Spay
@@ -70,7 +70,7 @@
                             <!-- <td>$</td> -->
                         </tr>
                         <tr>
-                            <td>Classic / Regular pedicure (6 min massage)(27-35 Min)</td>
+                            <td>Classic / Regular pedicure</td>
                             <td>$27</td>
                             <!-- <td>$</td> -->
                         </tr>
@@ -78,7 +78,8 @@
                     </tbody>
                     <thead>
                         <tr>
-                            <th colspan="2"> <a href="assets/services.pdf" style="color: #fff;">More Services </a></th>
+                            <th colspan="2"> <a href="assets/services.pdf" target="_blank" style="color: #fff;">More
+                                    Services </a></th>
 
                         </tr>
                     </thead>

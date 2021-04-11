@@ -81,7 +81,7 @@ class BlogsController extends Controller
      */
     public function update(Request $request, Blog $blog)
     {
-        $url = $request->file('image') ? $request->file('image')->store('blogs') : $blog->image_path;
+        $url = $request->file('image') ? $request->file('image')->store('blogs', ['disk' => 'public']) : $blog->image_path;
 
         $blog->title = $request->title;
         $blog->description = $request->description;

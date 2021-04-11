@@ -34,21 +34,22 @@
                     {{ isset($contactSuccessMessage) ?? '' }}
                 </div>
                 <div id="ContactErrorMessage">{{ isset($contactErrorMessage) ?? '' }}</div>
-                <form [formGroup]="contactUsForm" (ngSubmit)="onSubmit()" name="ContactForm">
+                <form (ngSubmit)="onSubmit()" name="ContactForm" id="ContactForm">
                     <div class="form-group pull-left">
-                        <input type="text" class="form-control" name="name" formControlName="name" placeholder="Name" />
+                        <input type="text" class="form-control" required name="name" formControlName="name"
+                            placeholder="Name" />
                     </div>
                     <div class="form-group pull-left marright0">
-                        <input type="email" class="form-control email" name="email" formControlName="email"
+                        <input type="email" required class="form-control email" name="email" formControlName="email"
                             placeholder="Email Id" />
                     </div>
                     <div class="textarea pull-left">
-                        <input type="text" class="form-control w-100" name="subject" formControlName="subject"
+                        <input type="text" required class="form-control w-100" name="subject" formControlName="subject"
                             placeholder="subject" />
                     </div>
 
                     <div class="textarea pull-left">
-                        <textarea placeholder="Description" name="description" formControlName="description"
+                        <textarea placeholder="Description" required name="description" formControlName="description"
                             class="form-control"></textarea>
                     </div>
                     <button type="submit" class="btn btn-default" value="Submit" [disabled]="!contactUsForm.valid">
