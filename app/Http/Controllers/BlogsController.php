@@ -15,7 +15,7 @@ class BlogsController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::paginate();
+        $blogs = Blog::paginate(10);
         return view('blogs.index', compact('blogs')) ;
     }
 
@@ -37,10 +37,11 @@ class BlogsController extends Controller
      */
     public function store(Request $request)
     {
-        $url = $request->file('image') ? $request->file('image')->store('blogs') : null;
+        $url = $request->file('image') ? $request->file('image')->store('blogs', ['disk' => 'public']) : null;
 
         Blog::create([
             'title' => $request->title,
+            'slug' => $request->title,
             'description' => $request->description,
             'active' => $request->active ? true : false,
             'image_path' => $url
@@ -98,6 +99,8 @@ class BlogsController extends Controller
      */
     public function destroy(Blog $blog)
     {
-        //
+        $blog->delete();
+
+        return redirect()->route('admin.blogs.index');
     }
 }

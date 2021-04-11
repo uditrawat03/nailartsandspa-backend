@@ -6,7 +6,7 @@
     <div class="blogpost">
         <div class="container">
             <div class="row">
-                @foreach($blogs as $blog)
+
                 <div class="col-lg-12" *ngFor="let blog of blogs">
                     <div class="blogfull wow fadeInUp">
                         <div class="blogimg"><img src="{{ url('storage/' .  $blog->image_path) }}"
@@ -18,12 +18,10 @@
                                 <!-- <span>July 31, 2014 | Author: Harry Panchal | No Comments</span> -->
                             </div>
                             <p>{{ $blog->description }}</p>
-                            <a class="btn btn-primary" href="{{ route('blogs.show', ['slug' => $blog->slug]) }}">Read
-                                More</a>
                         </div>
                     </div>
                 </div>
-                @endforeach
+
             </div>
         </div>
     </div>

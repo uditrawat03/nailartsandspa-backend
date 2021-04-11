@@ -38,11 +38,16 @@
                                 <td>{{ $blog->created_at->format('Y-m-d')}}</td>
                                 <td>
                                     <a href="{{ route('admin.blogs.edit', $blog) }}">Edit</a>
+                                    <a href="{{ route('admin.blogs.delete', $blog) }}">Delete</a>
                                 </td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
+
+                    <div class="d-flex justify-content-center">
+                        {!! $blogs->links() !!}
+                    </div>
                 </div>
             </div>
         </div>

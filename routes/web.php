@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 
 Route::get('blogs', 'Frontend\BlogsController@index');
+Route::get('blogs/{slug}', 'Frontend\BlogsController@show')->name('blogs.show');
 
 // Admin Routes
 Route::group(
@@ -30,5 +31,7 @@ Route::group(
     ],
     function () {
         Route::resource('blogs', 'BlogsController');
+
+        Route::get('blogs/{blog}/delete', 'BlogsController@destroy')->name('blogs.delete');
     }
 );

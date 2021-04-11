@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>NailandArtSpa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="assets/css/master.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/master.css') }}">
     <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -59,33 +59,37 @@
 
 </body>
 
-<script src="assets/js/jquery.1.11.2.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/function.js"></script>
-<script src="assets/js/bootstrap-datepicker.js"></script>
-<script src="assets/js/parallax.js"></script>
-<script src="assets/js/scorll.js"></script>
-<script src="assets/js/jquery.easing.min.js"></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/menu.js"></script>
-<script src="assets/js/ios-timer.js"></script>
-<script src="assets/js/jquery.fencybox.js"></script>
-<script src="assets/js/jquery.portfolio.js"></script>
-<script src="assets/js/jquery.mousewheel-3.0.6.pack.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/jquery.validate.js"></script>
+<script src="{{ asset('assets/js/jquery.1.11.2.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+<script src="{{ asset('assets/js/function.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap-datepicker.js') }}"></script>
+<script src="{{ asset('assets/js/parallax.js') }}"></script>
+<script src="{{ asset('assets/js/scorll.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('assets/js/slick.js') }}"></script>
+<script src="{{ asset('assets/js/menu.js') }}"></script>
+<script src="{{ asset('assets/js/ios-timer.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.fencybox.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.portfolio.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.mousewheel-3.0.6.pack.js') }}"></script>
+<script src="{{ asset('assets/js/wow.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.validate.js') }}"></script>
 <!-- REVOLUTION JS FILES -->
-<script type="text/javascript" src="assets/js/revoluation/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="assets/js/revoluation/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="{{ asset('assets/js/revoluation/jquery.themepunch.tools.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/revoluation/jquery.themepunch.revolution.min.js') }}"></script>
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
 (Load Extensions only on Local File Systems ! 
 The following part can be removed on Server for On Demand Loading) -->
-<script type="text/javascript" src="assets/js/revoluation/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="assets/js/revoluation/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="assets/js/revoluation/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="assets/js/revoluation/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="assets/js/revoluation/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="assets/js/revoluation/revoluationfunction.js"></script>
+<script type="text/javascript" src="{{ asset('assets/js/revoluation/revolution.extension.layeranimation.min.js') }}">
+</script>
+<script type="text/javascript" src="{{ asset('assets/js/revoluation/revolution.extension.migration.min.js') }}">
+</script>
+<script type="text/javascript" src="{{ asset('assets/js/revoluation/revolution.extension.navigation.min.js') }}">
+</script>
+<script type="text/javascript" src="{{ asset('assets/js/revoluation/revolution.extension.parallax.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/revoluation/revolution.extension.slideanims.min.js') }}">
+</script>
+<script type="text/javascript" src="{{ asset('assets/js/revoluation/revoluationfunction.js') }}"></script>
 
 <script type="text/javascript" src="https://booksy.com/widget/code.js?id=102956&country=us&lang=en"></script>
 
