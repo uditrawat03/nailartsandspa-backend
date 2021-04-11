@@ -17,13 +17,12 @@ class FrontendDirective
     public static function instagramFeeds()
     {
         $profile = Profile::first();
-
-        $feeds = $profile->feed(12);
-
-
         $data = [];
-        foreach ($feeds as $feed) {
-            array_push($data, $feed['url']);
+        if ($profile) {
+            $feeds = $profile->feed(12);
+            foreach ($feeds as $feed) {
+                array_push($data, $feed['url']);
+            }
         }
 
         return view('frontend.feeds', compact('data'));

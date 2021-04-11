@@ -19,7 +19,7 @@ Route::get('/', function () {
 // Frontend Routes
 
 
-Route::get('blogs', 'Frontend\BlogsController@index');
+Route::get('blogs', 'Frontend\BlogsController@index')->name('blogs.index');
 Route::get('blogs/{slug}', 'Frontend\BlogsController@show')->name('blogs.show');
 
 // Admin Routes
@@ -30,6 +30,11 @@ Route::group(
         'as' => 'admin.'
     ],
     function () {
+        Route::get('/', function () {
+            return redirect()->route('login');
+        })->name('home');
+
+
         Route::resource('blogs', 'BlogsController');
 
         Route::get('blogs/{blog}/delete', 'BlogsController@destroy')->name('blogs.delete');
