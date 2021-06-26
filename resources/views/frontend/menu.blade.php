@@ -18,8 +18,8 @@
                         <li class="page-scroll"><a href="#appointment">Appointment</a></li>
                         <!-- <li class="page-scroll"><a routerLink='/' href="#gallery">portfolio</a></li> -->
                         <li class="page-scroll"><a href="#promotions">Early bird special</a></li>
-                        <li class=""><a href="{{ route('blogs.index') }}">Blogs</a></li>
-                        <li class="page-scroll"><a href="#video">About Us</a></li>
+                        <li class=""><a href="{{ route('blogs.index') }}" target="_blank">Blogs</a></li>
+                        <li class="page-scroll"><a href="#video" >About Us</a></li>
                         <!-- <li><a href="blog.html">Blog</a>
                             <ul>
                                 <li><a href="blog-classic.html">Blog Classic</a></li>

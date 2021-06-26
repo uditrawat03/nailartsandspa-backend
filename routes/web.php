@@ -30,12 +30,15 @@ Route::group(
         'as' => 'admin.'
     ],
     function () {
-        Route::get('/', function () {
-            return redirect()->route('login');
+        Route::get('/', function () {            
+            return redirect()->route('admin.admin-dashboard');
         })->name('home');
 
+        Route::get('dashboard', function () {
+            return view('backend.contactus');
+        })->name('admin-dashboard');
 
-        Route::resource('blogs', 'BlogsController');
+        Route::resource('blogs', 'admin\BlogsController');
 
         Route::get('blogs/{blog}/delete', 'BlogsController@destroy')->name('blogs.delete');
     }

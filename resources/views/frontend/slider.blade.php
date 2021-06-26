@@ -26,7 +26,42 @@
                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
                         data-bgparallax="10" class="rev-slidebg" data-no-retina>
                 </li>
-
+                <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
+                    data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                    data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
+                    data-saveperformance="off" data-title="Intro" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('assets/images/nailandarts/slider/slider2.jpg') }}" alt="slider"
+                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                </li>
+                <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
+                    data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                    data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
+                    data-saveperformance="off" data-title="Intro" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('assets/images/nailandarts/slider/slide2.jpg') }}" alt="slider"
+                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                </li>
+                <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
+                    data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                    data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
+                    data-saveperformance="off" data-title="Intro" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('assets/images/nailandarts/slider/slide4.jpg') }}" alt="slider"
+                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                </li>
+                <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
+                    data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                    data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
+                    data-saveperformance="off" data-title="Intro" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('assets/images/nailandarts/slider/slide5.jpg') }}" alt="slider"
+                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                </li>
                 <!-- SLIDE  -->
                 <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
                     data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
@@ -37,28 +72,7 @@
                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
                         data-bgparallax="10" class="rev-slidebg" data-no-retina>
                 </li>
-                <!-- SLIDE  -->
-                <li data-index="rs-17" data-transition="zoomout" data-slotamount="default"
-                    data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                    data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
-                    data-saveperformance="off" data-title="Intro" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{ asset('assets/images/nailandarts/slider/slide2.jpg') }}" alt="slider"
-                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-                </li>
-
-                <!-- SLIDE  -->
-                <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
-                    data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                    data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
-                    data-saveperformance="off" data-title="Intro" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{ asset('assets/images/nailandarts/slider/slider2.jpg') }}" alt="slider"
-                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                </li>
+                <!-- SLIDE  -->                
                 <li data-index="rs-18" data-transition="zoomout" data-slotamount="default"
                     data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
                     data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
@@ -67,25 +81,7 @@
                     <img src="{{ asset('assets/images/nailandarts/slider/slide3.jpg') }}" alt="slider"
                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
                         data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                </li>
-                <li data-index="rs-18" data-transition="zoomout" data-slotamount="default"
-                    data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                    data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
-                    data-saveperformance="off" data-title="Intro" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{ asset('assets/images/nailandarts/slider/slide4.jpg') }}" alt="slider"
-                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                </li>
-                <li data-index="rs-18" data-transition="zoomout" data-slotamount="default"
-                    data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                    data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
-                    data-saveperformance="off" data-title="Intro" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{ asset('assets/images/nailandarts/slider/slide5.jpg') }}" alt="slider"
-                        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                        data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                </li>
+                </li>                
                 <li data-index="rs-18" data-transition="zoomout" data-slotamount="default"
                     data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
                     data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"

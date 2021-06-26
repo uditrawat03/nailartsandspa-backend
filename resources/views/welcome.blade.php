@@ -3,7 +3,6 @@
 @section('content')
 
 @include('frontend/about-us')
-@include('frontend/teams')
 @include('frontend/our-services')
 @include('frontend/appointment')
 @include('frontend/portfolio')

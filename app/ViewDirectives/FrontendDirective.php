@@ -16,10 +16,10 @@ class FrontendDirective
 
     public static function instagramFeeds()
     {
-        $profile = Profile::first();
+        $profile = Profile::first();        
         $data = [];
         if ($profile) {
-            $feeds = $profile->feed(12);
+            $feeds = $profile->feed();
             foreach ($feeds as $feed) {
                 array_push($data, $feed['url']);
             }

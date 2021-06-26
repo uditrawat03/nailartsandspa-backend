@@ -6,11 +6,11 @@
             </div>
             <div class="clearfix"></div>
             <div id="instafeed"></div>
-            <div class="portfoliodiv">
+            <div class="portfoliodiv">                
                 @if(isset($data))
                 @foreach($data as $feed)
+                @if(isset($feed) && (@file_get_contents($feed)))
                 <div class="col-25 coloring manucuring">
-
                     <a class="fancybox" href="{{ $feed }}" data-fancybox-group="gallery">
                         <div class="hover">
                             <img src="{{ $feed }}" alt="Portfolio" />
@@ -23,6 +23,7 @@
                         </div>
                     </a>
                 </div>
+                @endif
                 @endforeach
                 @endif
             </div>

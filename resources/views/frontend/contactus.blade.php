@@ -12,19 +12,46 @@
                             width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
                     </div>
                     <div class="social">
-                        <p>3020 22nd Ave N, St. Petersburg, FL 33713</p>
+                        <a href="https://www.google.com/maps/place/Nail+Art+%26+Spa/@27.7915,-82.674493,14z/data=!4m5!3m4!1s0x0:0xa03f44d4f6f85547!8m2!3d27.7915733!4d-82.6744644?hl=en-US">
+                            <p>3020 22nd Ave N, St. Petersburg, FL 33713</p>
+                        </a>
                         <span>Phone - <a href="tel:727-999-1581">727-999-1581</a> </span>
                         <br />
                         <span>Email -
-                            <a href="mailto:NailArtSpa@Yahoo.com">NailArtSpa@Yahoo.com</a>
+                            <a href="mailto:NailArtSpaStPete@gmail.com">NailArtSpaStPete@gmail.com</a>
                         </span>
-                        <div class="social-icon">
+                        <!-- <div class="social-icon">
                             <a href="https://www.facebook.com/nailartspaStPete/" class="facebook"></a>
                             <a href="https://www.google.com/search?ei=8b0EWqmTA8We0gLS8JWwBQ&q=Nail+Art+%26+Spa+33713"
                                 class="google"></a>
                             <!-- <a href="https://www.instagram.com/nailartspa/" class="youtube"></a>
                             <a href="https://www.yelp.com/biz/nail-art-and-spa-st-petersburg" class="twitter"></a> -->
-                        </div>
+                        <!--/div> -->
+                        <ul class="social-icon"><!-- facebook link -->
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/nailartspaStPete/">
+                                    <img src="{{ asset('assets/images/facebook.png') }}">
+                                </a>
+                            </li>
+                            <!-- google link -->
+                            <li>
+                                <a target="_blank" href="https://www.google.com/search?ei=8b0EWqmTA8We0gLS8JWwBQ&amp;q=Nail+Art+%26+Spa+33713">
+                                    <img src="{{ asset('assets/images/google-plus.png') }}">
+                                </a>
+                            </li>
+                            <!-- instagram link -->
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/nailartspa/">
+                                    <img src="{{ asset('assets/images/instagram_old.png') }}">
+                                </a>
+                            </li>
+                            <!-- yelp link -->
+                            <li>
+                                <a target="_blank" href="https://www.yelp.com/biz/nail-art-and-spa-st-petersburg">
+                                    <img src="{{ asset('assets/images/yelp.png') }}">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -59,7 +86,7 @@
                 <div class="coypright">
                     <p>&copy; Nail Art & Spa {{ isset($year) ?? now()->year() }}</p>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div>            
+        </div>        
+    </div>    
 </section>

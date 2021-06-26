@@ -19,8 +19,8 @@
         <div class="row marbottom wow fadeInUp">
             <div class="col-sm-12 col-md-7 col-lg-7 col-padright-none">
                 <div class="subtitle">
-                    <h2 class="titile col-xs-offset-1 col-sm-offset-0 col-md-offset-1 ">organic spa manicures &
-                        pedicures</h2>
+                    <h2 class="titile">Look great & feel good with our services</h2>
+                    <h3 style="font-size: 25px;">Having fun nail arts with friends & family</h3>
                 </div>
                 <img src="assets/images/cutting.jpg" class="img-responsive" alt="organic spa manicures & pedicures">
             </div>
@@ -28,57 +28,66 @@
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>organic spa manicures & pedicures</th>
+                            <th>Look great & feel good with our services</th>
                             <th>Price</th>
                             <!-- <th>MENS</th> -->
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Classic Spa Manicure</td>
-                            <td>$15</td>
+                            <td>Gel Polish Fullset</td>
+                            <td>$50</td>
                             <!-- <td>$70</td> -->
                         </tr>
                         <tr>
-                            <td>Deluxe Spa Manicure</td>
-                            <td>$15</td>
+                            <td>Pink & white ombré</td>
+                            <td>$55</td>
                             <!-- <td>$80</td> -->
                         </tr>
                         <tr>
-                            <td>Hot Stone Spa Manicure</td>
-                            <td>$35</td>
+                            <td>Custom nail design</td>
+                            <td>$60/h</td>
                             <!-- <td>$100</td> -->
                         </tr>
                         <tr>
-                            <td>Shellac Gel No-chip Manicure</td>
-                            <td>$35</td>
+                            <td>Dipping Nails</td>
+                            <td>$40</td>
                             <!-- <td>$POA</td> -->
                         </tr>
                         <tr>
-                            <td>Deluxe Shellac Gel No Chip Manicure</td>
-                            <td>$45</td>
-                            <!-- <td>$</td> -->
-                        </tr>
-                        <tr>
-                            <td>SNS Dipping powder</td>
+                            <td>Gel manicure</td>
                             <td>$35</td>
                             <!-- <td>$</td> -->
                         </tr>
                         <tr>
-                            <td>SNS Dipping powder /w Manicure</td>
-                            <td>$45</td>
+                            <td>Spa classic Pedicure</td>
+                            <td>$30</td>
                             <!-- <td>$</td> -->
                         </tr>
                         <tr>
-                            <td>Classic / Regular pedicure</td>
-                            <td>$27</td>
+                            <td>Eye brows waxing</td>
+                            <td>$10</td>
                             <!-- <td>$</td> -->
                         </tr>
-
+                        <tr>
+                            <td>Nail Art 2 nails started at</td>
+                            <td>$7</td>
+                            <!-- <td>$</td> -->
+                        </tr>
+                        <tr>
+                            <td>Classic Spa Manicure</td>
+                            <td>$17</td>
+                            <!-- <td>$70</td> -->
+                        </tr>
+                        <tr>
+                            <td>Pink & White Fullset</td>
+                            <td>$55</td>
+                            <!-- <td>$70</td> -->
+                        </tr>
                     </tbody>
                     <thead>
                         <tr>
-                            <th colspan="2"> <a href="assets/services.pdf" target="_blank" style="color: #fff;">More
+                            <th colspan="2"> <a href="assets/services.png" target="_blank" style="color: #fff;">More
                                     Services </a></th>
 
                         </tr>

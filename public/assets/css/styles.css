@@ -639,7 +639,7 @@ header {
   width: 28px;
   height: 28px;
   margin-right: 20px;
-  background: url(../images/social-icon.png) no-repeat;
+  /*background: url(../images/social-icon.png) no-repeat; */
 }
 .social-icon a.facebook {
   background-position: 0 0;
